@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/grafik"
+    app:startDestination="@id/homeActivity">
+
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.activity.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" >
+        <action
+            android:id="@+id/action_homeActivity_to_daftarRoleLol"
+            app:destination="@id/daftarRoleLol" />
+    </activity>
+    <activity
+        android:id="@+id/daftarRoleLol"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.activity.DaftarRoleLol"
+        android:label="DaftarRoleLol"
+        tools:layout="@layout/activity_daftar_role_lol">
+        <action
+            android:id="@+id/action_daftarRoleLol_to_fragmentBottomLanerList2"
+            app:destination="@id/fragmentBottomLanerList2" />
+        <action
+            android:id="@+id/action_daftarRoleLol_to_fragmentBottomLanerList22"
+            app:destination="@id/fragmentBottomLanerList2" />
+        <action
+            android:id="@+id/action_daftarRoleLol_to_fragmentJungleList2"
+            app:destination="@id/fragmentJungleList2" >
+            <action
+                android:id="@+id/action_action_daftarRoleLol_to_fragmentJungleList2_to_fragmentMidLaner"
+                app:destination="@id/fragmentMidLaner" />
+        </action>
+        <action
+            android:id="@+id/action_daftarRoleLol_to_fragmentMidLaner"
+            app:destination="@id/fragmentMidLaner" />
+        <action
+            android:id="@+id/action_daftarRoleLol_to_fragmentTopLaner"
+            app:destination="@id/fragmentTopLaner" />
+        <action
+            android:id="@+id/action_daftarRoleLol_to_fragmentSupportList2"
+            app:destination="@id/fragmentSupportList2" />
+    </activity>
+    <fragment
+        android:id="@+id/fragmentBottomLanerList2"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.fragment.FragmentBottomLanerList"
+        android:label="FragmentBottomLanerList"
+        tools:layout="@layout/fragment_bottom_laner_list">
+        <action
+            android:id="@+id/action_fragmentBottomLanerList2_to_daftarRoleLol"
+            app:destination="@id/daftarRoleLol" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentJungleList2"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.fragment.FragmentJungleList"
+        android:label="FragmentJungleList"
+        tools:layout="@layout/fragment_jungle_list">
+        <action
+            android:id="@+id/action_fragmentJungleList2_to_daftarRoleLol"
+            app:destination="@id/daftarRoleLol" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMidLaner"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.fragment.FragmentMidLaner"
+        android:label="FragmentMidLaner"
+        tools:layout="@layout/fragment_mid_laner">
+        <action
+            android:id="@+id/action_fragmentMidLaner_to_daftarRoleLol"
+            app:destination="@id/daftarRoleLol" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSupportList2"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.fragment.FragmentSupportList"
+        android:label="FragmentSupportList"
+        tools:layout="@layout/fragment_support_list">
+        <action
+            android:id="@+id/action_fragmentSupportList2_to_daftarRoleLol"
+            app:destination="@id/daftarRoleLol" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTopLaner"
+        android:name="com.tugastengahsemester.farhanrizkyaditya.fragment.FragmentTopLaner"
+        android:label="FragmentTopLaner"
+        tools:layout="@layout/fragment_top_laner">
+        <action
+            android:id="@+id/action_fragmentTopLaner_to_daftarRoleLol"
+            app:destination="@id/daftarRoleLol" />
+    </fragment>
+</navigation>
